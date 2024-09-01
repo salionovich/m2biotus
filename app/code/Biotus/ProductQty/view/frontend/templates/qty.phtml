@@ -1,0 +1,8 @@
+<?php
+/** @var \Magento\Catalog\Model\Product $product */
+$product = $block->getProduct();
+?>
+<div id="product-qty-container" data-product-id="<?= /* @noEscape */ $product->getId(); ?>">
+    <span id="product-qty">Loading data...</span>
+</div>
+<script type="text/javascript" src="<?= $block->getViewFileUrl('Biotus_ProductQty::js/qty.js'); ?>"></script>
